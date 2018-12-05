@@ -8,7 +8,9 @@ a simple REST server written in Nodejs
 
 Then
 `$ npm install`
+
 `$ cd src`
+
 `$ node index.js`
 
 Then visit `http://localhost:3002` in your browser
