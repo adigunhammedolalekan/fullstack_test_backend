@@ -1,0 +1,18 @@
+error: test
+error: test
+error: test
+error: test
+2018-12-05T23:09:51.111Z [Meow] error: test
+2018-12-05T23:10:03.430Z [Meow] error: test
+2018-12-05T23:11:49.323Z [Meow] error: test
+2018-12-05T23:12:20.478Z [Meow] error: test
+2018-12-05T23:13:25.090Z [undefined] error: test
+2018-12-05T23:14:08.102Z [undefined] error: test
+2018-12-05T23:14:17.976Z [undefined] error: test
+2018-12-05T23:14:37.299Z [undefined] error: test
+2018-12-05T23:15:28.325Z [undefined] error: test
+2018-12-05T23:15:50.925Z [undefined] error: test
+2018-12-05T23:16:07.407Z [App] error: test
+2018-12-05T23:16:15.807Z [App] error: test
+2018-12-05T23:17:50.930Z [App] [31merror[39m: test
+2018-12-05T23:18:32.533Z [App] error: test
