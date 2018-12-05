@@ -7,7 +7,7 @@ a simple REST server written in Nodejs
 `git clone https://github.com/adigunhammedolalekan/fullstack_test_backend.git`
 
 Then
-
+`$ npm install`
 `$ cd src`
 `$ node index.js`
 
