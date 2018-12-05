@@ -1,0 +1,12 @@
+{
+   "useTabs": true,
+   "useSpaces":false,
+   "printWidth": 130,
+   "tabWidth": 1,
+   "spaceWidth": 3,
+   "singleQuote": true,
+   "trailingComma": "all",
+   "jsxBracketSameLine": false,
+   "parser": "typescript"
+ }
+ 
