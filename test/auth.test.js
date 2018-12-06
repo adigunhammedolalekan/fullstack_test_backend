@@ -16,9 +16,10 @@ test('should generate a valid jsonwebtoken', () => {
 	expect(decoded.email).toBe('test@gmail.com')
 })
 
+
 test('verify jwt token', () => {
 	
-	var token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNTQ0MDU3ODg2fQ.1jPENYXJJkUJBwmsv67H7yJXSl8YyNorEtg8Jkfzv1c'
+	const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNTQ0MDU3ODg2fQ.1jPENYXJJkUJBwmsv67H7yJXSl8YyNorEtg8Jkfzv1c'
 	const req = httpMocks.createRequest({
 		method: 'GET',
 		url: '/',

@@ -5,6 +5,10 @@ require('dotenv').config()
 * Generate a signed JWT token with user's email as claim
 */
 module.exports.generateToken = (email) => {
+
+	if (email.length == 0) {
+		throw new Error('Invalid email address')
+	}
 	return jwt.sign({'email' : email}, process.env.JWT_SECRET)
 }
 
@@ -36,14 +40,12 @@ module.exports.jwtMiddleware = (req, res, next) => {
 	}
 
 	//grab and verify jwt token
-	token = parts[1]
-	var errMessage = ''
+	const token = parts[1]
 	var decoded = null
 	try {
 
 		decoded = jwt.verify(token, process.env.JWT_SECRET);
 	}catch(err) {
-		errMessage = 'Failed to verify authorization token'
 	}
 
 	//failed to verify token
