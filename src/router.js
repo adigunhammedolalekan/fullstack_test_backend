@@ -13,7 +13,7 @@ router.post('/login', (req, res) => {
 		.then(result => res.status(200).json({ body: result, error: false, message: 'Login successful' }))
 		.catch(err => {
 			if (err.isJoi) {
-				res.status(500).json({ body: err, error: true, message: 'Validation error' });
+				res.status(422).json({ body: err, error: true, message: 'Validation error' });
 			} else {
 				res.status(500).json({ body: `${err}`, error: true, message: 'Error in logging in user' });
 			}
