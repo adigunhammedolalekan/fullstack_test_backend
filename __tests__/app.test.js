@@ -7,9 +7,9 @@ const request = supertest(app);
 const BASE_ROUTE = '/api/v1/';
 const INVALID_ROUTE = 'INVALID_ROUTE_(#)@';
 const VALID_ROUTE = '/login';
-const VALID_EMAIL = 'user@gmail.com';
+const VALID_EMAIL = process.env.EMAIL;
 const INVALID_EMAIL = 'invaliduser8493489@gmail';
-const VALID_PASSWORD = 'secret';
+const VALID_PASSWORD = process.env.PASSWORD;
 const INVALID_PASSWORD = 'invalidpasswordatsalvista';
 
 describe('Test app end to end', () => {
@@ -27,7 +27,6 @@ describe('Test app end to end', () => {
 			.post(BASE_ROUTE + VALID_ROUTE)
 			.send({ email, password })
 			.then(response => {
-				console.log(response.body);
 				expect(response.statusCode).toBe(500);
 				expect(response.body).toHaveProperty('error', true);
 				expect(response.body).toHaveProperty('body', 'Error: User not found');
@@ -42,7 +41,6 @@ describe('Test app end to end', () => {
 			.post(BASE_ROUTE + VALID_ROUTE)
 			.send({ email, password })
 			.then(response => {
-				console.log(response.body);
 				expect(response.statusCode).toBe(500);
 				expect(response.body).toHaveProperty('error', true);
 				expect(response.body).toHaveProperty('body', 'Error: Password mismatch');
