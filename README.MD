@@ -1,5 +1,5 @@
-## Fullstack Test Backend
-a simple REST server written in Nodejs
+## NodeJs Backend Test
+A simple REST server written in Nodejs to perfom process user login requests
 
 ### How to run
 
@@ -9,4 +9,10 @@ a simple REST server written in Nodejs
 Then
 `$ npm install`
 
-`$ npm run start`
+`$ npm run start ` to start the server
+
+`$ npm run test` to run tests
+
+
+login endpoint - `/api/v1/login`
+`post email and password data`
