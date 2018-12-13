@@ -1,5 +1,5 @@
 const EMAIL = process.env.EMAIL;
-const PASSWORD = process.env.password;
+const PASSWORD = process.env.PASSWORD;
 
 async function verifyEmail(data) {
 	try {
